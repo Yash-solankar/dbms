@@ -1,0 +1,12 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+        .testimonial-container {
+            scroll-behavior: smooth;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+        }

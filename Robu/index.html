@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white shadow">
+        <div class="header">
+            <div class="container">
+              <div class="navbar">
+                <div class="logo-container">
+                  <div class="logo">
+                    <span class="red">ELECTRONIC</span><span class="store">CART</span>
+                  </div>
+                  <div class="slogan">Future. Delivered.</div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Products</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/about.html#contact">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                  </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+              </div>
+        
+            </div>
+          </div>
+    </nav>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-12 gap-8">
+
+            <div class="col-span-12 lg:col-span-4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <img src="fast.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-xl font-semibold text-gray-900">Product Management</h2>
+                        <button id="addProductBtn"
+                            class="flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 !rounded-button">
+                            <i class="ri-add-line mr-2"></i>
+                            Add Product
+                        </button>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4 mb-6">
+                        <div class="flex-1 relative">
+                            <i class="ri-search-line absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                            <input type="text" placeholder="Search products..."
+                                class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        </div>
+                        <div class="relative" id="categoryDropdown">
+                            <button
+                                class="px-4 py-2 border border-gray-300 rounded-button flex items-center space-x-2 !rounded-button">
+                                <span>All Categories</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button
+                                class="w-10 h-10 flex items-center justify-center text-primary bg-primary/10 rounded-button active">
+                                <i class="ri-grid-line"></i>
+                            </button>
+                            <button
+                                class="w-10 h-10 flex items-center justify-center text-gray-600 hover:bg-gray-100 rounded-button">
+                                <i class="ri-list-check"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/421e1d6a87d2639339a4c139f9915ff5.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">Arduino Uno R3</h3>
+                                    <span class="text-primary font-semibold">&#8377; 24.99</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">In
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">ATmega328P Microcontroller Board</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/67c8ca82a1c1a53a7f57b0032a804b42.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">Raspberry Pi 4 <br> Model B</h3>
+                                    <span class="text-primary font-semibold">&#8377; 45.99</span>
+                                </div>
+                                <span
+                                    class="inline-block px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Low
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">4GB RAM Single Board Computer</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/c6a3bdda4fee7b4695ade4383f67293e.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">DHT11 Sensor Module</h3>
+                                    <span class="text-primary font-semibold">&#8377; 3.99</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">In
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">Temperature & Humidity Sensor</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/c216f2c825dfb7e076fd1cdceb1e94cd.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">0.96" OLED Display</h3>
+                                    <span class="text-primary font-semibold">&#8377; 6.99</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">In
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">128x64 I2C OLED Module</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/aa30837d9339fcdf979c2953d8fcd742.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">HC-SR04 Sensor</h3>
+                                    <span class="text-primary font-semibold">&#8377; 2.99</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs bg-red-100 text-red-800 rounded-full">Out of
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">Ultrasonic Distance Sensor</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                            <img src="https://public.readdy.ai/ai/img_res/9e3b0ddd8cb616e41658c1fcb7fbd58b.jpg"
+                                class="w-full h-48 object-cover rounded-lg mb-4" alt="Product">
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-medium text-gray-900">ESP8266 NodeMCU</h3>
+                                    <span class="text-primary font-semibold">&#8377; 5.99</span>
+                                </div>
+                                <span class="inline-block px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">In
+                                    Stock</span>
+                                <p class="text-sm text-gray-600">WiFi Development Board</p>
+                                <div class="flex items-center space-x-2">
+                                    <button
+                                        class="flex-1 px-3 py-1.5 border border-primary text-primary hover:bg-primary/10 rounded-button !rounded-button text-sm">Cart</button>
+                                    <button
+                                        class="w-8 h-8 flex items-center justify-center text-red-600 hover:bg-red-50 rounded-button">
+                                        <i class="ri-delete-bin-line"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="three1">
+        <div class="three">
+            <img src="MicrosoftTeams-image-323.png" alt="">
+            <img src="MicrosoftTeams-image-324.png" alt="">
+            <img src="MicrosoftTeams-image-352.png" alt="">
+        </div>
+    </div> -->
+    <div id="addProductModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+        <div class="bg-white rounded-lg w-full max-w-2xl mx-4">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-semibold text-gray-900">Add New Product</h3>
+                    <button class="text-gray-400 hover:text-gray-600" onclick="toggleModal('addProductModal')">
+                        <i class="ri-close-line text-2xl"></i>
+                    </button>
+                </div>
+                <form id="addProductForm" class="space-y-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+                            <input type="text"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                            <select
+                                class="w-full px-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary pr-8">
+                                <option>Development Boards</option>
+                                <option>Sensors</option>
+                                <option>Displays</option>
+                                <option>Electronic Modules</option>
+                                <option>Accessories</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Price</label>
+                            <input type="number"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Stock</label>
+                            <input type="number"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-button focus:ring-2 focus:ring-primary/20 focus:border-primary"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Product Images</label>
+                        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                            <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center text-gray-400">
+                                <i class="ri-upload-cloud-line text-3xl"></i>
+                            </div>
+                            <p class="text-sm text-gray-600">Drag and drop your images here, or click to select files
+                            </p>
+                            <input type="file" multiple class="hidden" id="productImages">
+                            <button type="button"
+                                class="mt-4 px-4 py-2 text-sm text-primary border border-primary rounded-button hover:bg-primary/10 !rounded-button">Select
+                                Files</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-end space-x-4">
+                        <button type="button"
+                            class="px-6 py-2 border border-gray-300 text-gray-700 rounded-button hover:bg-gray-50 !rounded-button"
+                            onclick="toggleModal('addProductModal')">Cancel</button>
+                        <button type="submit"
+                            class="px-6 py-2 bg-primary text-white rounded-button hover:bg-primary/90 !rounded-button">Add
+                            Product</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="notification" class="fixed top-4 right-4 bg-white rounded-lg shadow-lg p-4 hidden">
+        <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 flex items-center justify-center bg-green-100 text-green-600 rounded-full">
+                <i class="ri-check-line"></i>
+            </div>
+            <div>
+                <h4 class="font-medium text-gray-900">Success</h4>
+                <p class="text-sm text-gray-600">Your changes have been saved successfully</p>
+            </div>
+        </div>
+    </div>
+    <div class="three1">
+        <div class="three">
+            <img src="MicrosoftTeams-image-323.png" alt="">
+            <img src="MicrosoftTeams-image-324.png" alt="">
+            <img src="MicrosoftTeams-image-352.png" alt="">
+        </div>
+    </div>
+
+    <!-- BRANDS -->
+     <div class="brands">
+        <div class="small-container">
+            <H3>Our Featured Brands</H3>
+            <div class="row">
+                <div class="col-5">
+                    <img src="logo-godrej.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-coca-cola.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-oppo.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-paypal.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-philips.png" >
+                </div>
+            </div>
+        </div>
+     </div>
+
+     
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+      
+            <div class="footer-col">
+              <h3>Download Our App</h3>
+              <p>Download our app for Android and iOS mobile phones to shop on the go.</p>
+              <!-- Optional: Add Play Store / App Store icons here -->
+            </div>
+      
+            <div class="footer-col">
+              <img src="white.png" alt="ElectroComponents Logo" class="footer-logo">
+              <p>Buy electronic hardware components online – microcontrollers, development boards, transistors, PCBs, and more. Fast shipping & genuine parts guaranteed.</p>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+      
+</body>
+
+</html>

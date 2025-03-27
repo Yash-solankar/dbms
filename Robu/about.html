@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ElectroTech Components</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+   
+</head>
+<body class="bg-white">
+    <!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="text-3xl font-['Pacifico'] text-primary">logo</a>
+                    <div class="hidden md:flex items-center ml-16 space-x-8">
+                        <a href="#" class="text-gray-700 hover:text-primary">Home</a>
+                        <a href="#" class="text-gray-700 hover:text-primary">Products</a>
+                        <a href="#" class="text-primary font-medium">About</a>
+                        <a href="#" class="text-gray-700 hover:text-primary">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
+                        <i class="ri-linkedin-line ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
+                        <i class="ri-twitter-line ri-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary">
+                        <i class="ri-facebook-line ri-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <nav class="bg-white shadow">
+        <div class="header">
+            <div class="container">
+              <div class="navbar">
+                <div class="logo-container">
+                  <div class="logo">
+                    <span class="red">ELECTRONIC</span><span class="store">CART</span>
+                  </div>
+                  <div class="slogan">Future. Delivered.</div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/product.html">Products</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/about.html#contact">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                  </ul>
+                </nav>
+                <img src="cart.png" width="30px" height="30px">
+              </div>
+        
+            </div>
+          </div>
+    </nav>
+
+    <main class="pt-20">
+        <section class="relative h-[600px] bg-gradient-to-r from-blue-50 to-blue-100">
+            <div class="absolute inset-0 bg-[url('https://public.readdy.ai/ai/img_res/4af63aa399f7a7b3296370621cdf76f2.jpg')] bg-cover bg-center opacity-20"></div>
+            <div class="container mx-auto px-6 h-full flex items-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold text-gray-900 mb-6">Powering Tomorrow's Innovations</h1>
+                    <p class="text-xl text-gray-700 mb-8">With over two decades of excellence in electronic components manufacturing, we're committed to delivering cutting-edge solutions that drive the future of technology.</p>
+                    <button class="bg-primary text-white px-8 py-3 !rounded-button text-lg font-medium hover:bg-blue-700 transition-colors cursor-pointer">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                        <p class="text-gray-700 mb-6">Founded in 2000, ElectroTech Components has grown from a small local supplier to a global leader in electronic component manufacturing. Our journey has been driven by innovation, quality, and an unwavering commitment to customer satisfaction.</p>
+                        <p class="text-gray-700 mb-6">Today, we serve over 1,000 clients worldwide, providing components that power everything from consumer electronics to advanced medical devices and aerospace systems.</p>
+                        <div class="grid grid-cols-3 gap-6 mt-12">
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary mb-2">25+</div>
+                                <div class="text-gray-600">Years Experience</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary mb-2">1000+</div>
+                                <div class="text-gray-600">Global Clients</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary mb-2">50M+</div>
+                                <div class="text-gray-600">Components Delivered</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://public.readdy.ai/ai/img_res/c3f8ac2cd00eedc202297c5f8b84248e.jpg" alt="Company Timeline" class="rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Our Key Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/7d86bb5a7d642ba69d5da646a4eddcf3.jpg" alt="Microprocessors" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Microprocessors</h3>
+                            <p class="text-gray-600 mb-4">Advanced processing units for computing and control systems</p>
+                            <button class="text-primary font-medium hover:text-blue-700 cursor-pointer">Learn More →</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/ca5881a81bfa506f177ed714d1c863fa.jpg" alt="Circuit Boards" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Circuit Boards</h3>
+                            <p class="text-gray-600 mb-4">Custom PCB solutions for diverse applications</p>
+                            <button class="text-primary font-medium hover:text-blue-700 cursor-pointer">Learn More →</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/8f998e60ff94e450e232218c3f7fd9eb.jpg" alt="Sensors" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Sensors</h3>
+                            <p class="text-gray-600 mb-4">High-precision sensing solutions for IoT and automation</p>
+                            <button class="text-primary font-medium hover:text-blue-700 cursor-pointer">Learn More →</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://public.readdy.ai/ai/img_res/c95576dc19a644b3fd5ea56172cc436e.jpg" alt="Power Management" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Power Management</h3>
+                            <p class="text-gray-600 mb-4">Efficient power solutions for electronic devices</p>
+                            <button class="text-primary font-medium hover:text-blue-700 cursor-pointer">Learn More →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
+                <div class="relative">
+                    <div class="testimonial-container overflow-hidden">
+                        <div class="flex transition-transform duration-300" id="testimonialSlider">
+                            <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <div class="flex items-center mb-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/99faedefe5f30c9d18de88c2f85137d6.jpg" alt="James Wilson" class="w-12 h-12 rounded-full object-cover">
+                                        <div class="ml-4">
+                                            <div class="font-bold text-gray-900">James Wilson</div>
+                                            <div class="text-sm text-gray-600">CTO, TechCorp Inc.</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">"Their microprocessors have consistently exceeded our expectations in terms of performance and reliability. Excellent support team too!"</p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <div class="flex items-center mb-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/6e785c3212c759852817fc6c1d55e28f.jpg" alt="Sarah Chen" class="w-12 h-12 rounded-full object-cover">
+                                        <div class="ml-4">
+                                            <div class="font-bold text-gray-900">Sarah Chen</div>
+                                            <div class="text-sm text-gray-600">Product Manager, InnovateSys</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">"The quality and consistency of their circuit boards have helped us maintain our high standards in medical device manufacturing."</p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-gray-50 p-6 rounded-lg">
+                                    <div class="flex items-center mb-4">
+                                        <img src="https://public.readdy.ai/ai/img_res/27ab83238cde460fd561abaefc0d17fb.jpg" alt="Robert Martinez" class="w-12 h-12 rounded-full object-cover">
+                                        <div class="ml-4">
+                                            <div class="font-bold text-gray-900">Robert Martinez</div>
+                                            <div class="text-sm text-gray-600">Lead Engineer, AeroSpace Solutions</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">"Their sensor technology has revolutionized our approach to aerospace systems. Truly cutting-edge solutions."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white shadow-lg rounded-full cursor-pointer" onclick="moveTestimonials('prev')">
+                        <i class="ri-arrow-left-s-line ri-lg"></i>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-white shadow-lg rounded-full cursor-pointer" onclick="moveTestimonials('next')">
+                        <i class="ri-arrow-right-s-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Frequently Asked Questions</h2>
+                <div class="max-w-3xl mx-auto">
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full px-6 py-4 text-left focus:outline-none cursor-pointer" onclick="toggleFaq(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium text-gray-900">What is your minimum order quantity?</span>
+                                    <i class="ri-arrow-down-s-line ri-lg"></i>
+                                </div>
+                            </button>
+                            <div class="faq-answer px-6 pb-4">
+                                <p class="text-gray-700">Our minimum order quantity varies by product category. For standard components, it's typically 100 units. For custom solutions, please contact our sales team for specific requirements.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full px-6 py-4 text-left focus:outline-none cursor-pointer" onclick="toggleFaq(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium text-gray-900">What are your quality certifications?</span>
+                                    <i class="ri-arrow-down-s-line ri-lg"></i>
+                                </div>
+                            </button>
+                            <div class="faq-answer px-6 pb-4">
+                                <p class="text-gray-700">We hold ISO 9001:2015, ISO 14001:2015, and AS9100D certifications. Our facilities are also certified for medical device component manufacturing.</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm">
+                            <button class="w-full px-6 py-4 text-left focus:outline-none cursor-pointer" onclick="toggleFaq(this)">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium text-gray-900">What is your warranty policy?</span>
+                                    <i class="ri-arrow-down-s-line ri-lg"></i>
+                                </div>
+                            </button>
+                            <div class="faq-answer px-6 pb-4">
+                                <p class="text-gray-700">We offer a standard 2-year warranty on all our products. Extended warranty options are available for specific product lines. Please refer to individual product specifications for detailed warranty information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-12">
+                        <button class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-blue-700 transition-colors cursor-pointer">Contact Support</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section  id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg">
+                                    <i class="ri-map-pin-line ri-lg text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900">Address</h3>
+                                    <p class="text-gray-600">123 Tech Park Drive<br>Silicon Valley, CA 94025</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg">
+                                    <i class="ri-mail-line ri-lg text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900">Email</h3>
+                                    <p class="text-gray-600">contact@electrotech.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg">
+                                    <i class="ri-phone-line ri-lg text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900">Phone</h3>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-50 rounded-lg">
+                                    <i class="ri-time-line ri-lg text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-medium text-gray-900">Business Hours</h3>
+                                    <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM PST</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[400px] rounded-lg overflow-hidden">
+                        <img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Location Map" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <a href="#" class="text-3xl font-['Pacifico'] text-white mb-6 block">logo</a>
+                    <p class="text-gray-400">Powering tomorrow's innovations with cutting-edge electronic components.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest news and products.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-l-button focus:outline-none text-gray-900">
+                        <button class="bg-primary px-4 py-2 !rounded-r-button hover:bg-blue-700 transition-colors cursor-pointer">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2025 ElectroTech Components. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-facebook-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-twitter-fill ri-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="ri-linkedin-fill ri-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <div class="brands">
+        <div class="small-container">
+            <H3>Our Featured Brands</H3>
+            <div class="row">
+                <div class="col-5">
+                    <img src="logo-godrej.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-coca-cola.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-oppo.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-paypal.png" >
+                </div>
+                <div class="col-5">
+                    <img src="logo-philips.png" >
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+      
+            <div class="footer-col">
+              <h3>Download Our App</h3>
+              <p>Download our app for Android and iOS mobile phones to shop on the go.</p>
+              <!-- Optional: Add Play Store / App Store icons here -->
+            </div>
+      
+            <div class="footer-col">
+              <img src="white.png" alt="ElectroComponents Logo" class="footer-logo">
+              <p>Buy electronic hardware components online – microcontrollers, development boards, transistors, PCBs, and more. Fast shipping & genuine parts guaranteed.</p>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center cursor-pointer opacity-0 transition-opacity duration-300">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+
+    <script>
+        let currentTestimonial = 0;
+        const testimonialSlider = document.getElementById('testimonialSlider');
+        const testimonials = document.querySelectorAll('.testimonial-container > div > div');
+
+        function moveTestimonials(direction) {
+            if (direction === 'next') {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            } else {
+                currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+            }
+            testimonialSlider.style.transform = `translateX(-${currentTestimonial * 33.333}%)`;
+        }
+
+        function toggleFaq(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            answer.classList.toggle('active');
+            icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+        }
+
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTopButton.style.opacity = window.scrollY > 500 ? '1' : '0';
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        setInterval(() => {
+            moveTestimonials('next');
+        }, 5000);
+    </script>
+</body>
+</html>
