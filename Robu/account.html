@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account | ElectroTech Components</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#64748b'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+
+        body {
+            background-color: #f9fafb;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .circuit-pattern {
+            background-image: url('https://public.readdy.ai/ai/img_res/fdd313b2a94932c1baa1a2ad1763bf2d.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .password-strength {
+            height: 4px;
+            transition: width 0.3s ease;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center"> -->
+            <nav class="bg-white shadow">
+                <div class="header">
+                    <div class="container">
+                      <div class="navbar">
+                        <div class="logo-container">
+                          <div class="logo">
+                            <span class="red">ELECTRONIC</span><span class="store">CART</span>
+                          </div>
+                          <div class="slogan">Future. Delivered.</div>
+                        </div>
+                        <nav>
+                          <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/product.html">Products</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/about.html#contact">Contact</a></li>
+                            <li><a href="/account.html">Account</a></li>
+                          </ul>
+                        </nav>
+                        <img src="cart.png" width="30px" height="30px">
+                      </div>
+                
+                    </div>
+                  </div>
+            </nav>
+        <!-- </div>
+    </header> -->
+    <main class="container mx-auto px-4 py-12 flex flex-col lg:flex-row min-h-[calc(100vh-200px)]">
+        <div class="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
+            <div class="circuit-pattern rounded-lg shadow-lg p-8 h-full flex flex-col justify-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Welcome to ElectroTech</h1>
+                <p class="text-gray-600 mb-6">Your trusted source for premium electronic components and hardware
+                    solutions for engineers, makers, and businesses.</p>
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white bg-opacity-90 p-4 rounded shadow-sm">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 mb-3">
+                            <i class="ri-shield-check-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="font-medium text-gray-800 mb-1">Quality Assured</h3>
+                        <p class="text-sm text-gray-600">All components tested and certified</p>
+                    </div>
+                    <div class="bg-white bg-opacity-90 p-4 rounded shadow-sm">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 mb-3">
+                            <i class="ri-truck-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="font-medium text-gray-800 mb-1">Fast Shipping</h3>
+                        <p class="text-sm text-gray-600">Same-day dispatch on orders before 2PM</p>
+                    </div>
+                    <div class="bg-white bg-opacity-90 p-4 rounded shadow-sm">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 mb-3">
+                            <i class="ri-customer-service-2-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="font-medium text-gray-800 mb-1">Expert Support</h3>
+                        <p class="text-sm text-gray-600">Technical assistance from our engineers</p>
+                    </div>
+                    <div class="bg-white bg-opacity-90 p-4 rounded shadow-sm">
+                        <div class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-100 mb-3">
+                            <i class="ri-price-tag-3-line text-primary ri-lg"></i>
+                        </div>
+                        <h3 class="font-medium text-gray-800 mb-1">Bulk Discounts</h3>
+                        <p class="text-sm text-gray-600">Special pricing for volume orders</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between bg-white bg-opacity-90 p-4 rounded shadow-sm">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100">
+                            <i class="ri-customer-service-2-line text-primary ri-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-medium text-gray-800">Need help?</h3>
+                            <p class="text-sm text-gray-600">Our team is available 24/7</p>
+                        </div>
+                    </div>
+                    <a href="/about.html#contact" class="text-primary font-medium whitespace-nowrap">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-1/2 bg-white rounded-lg shadow-lg p-8">
+            <div class="mb-6 flex border-b">
+                <button id="login-tab"
+                    class="py-3 px-6 border-b-2 border-primary text-primary font-medium">Login</button>
+                <button id="signup-tab" class="py-3 px-6 border-b-2 border-transparent text-gray-500 font-medium">Sign
+                    Up</button>
+            </div>
+            <!-- Login Form -->
+            <div id="login-form" class="block">
+                <form>
+                    <div class="mb-4">
+                        <label for="login-email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                            Address</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="ri-mail-line text-gray-400"></i>
+                            </div>
+                            <input type="email" id="login-email"
+                                class="form-input w-full pl-10 pr-3 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between items-center mb-1">
+                            <label for="login-password" class="block text-sm font-medium text-gray-700">Password</label>
+                            <a href="#" class="text-sm text-primary hover:text-primary-dark">Forgot Password?</a>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="ri-lock-line text-gray-400"></i>
+                            </div>
+                            <input type="password" id="login-password"
+                                class="form-input w-full pl-10 pr-10 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="••••••••">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer">
+                                <i class="ri-eye-off-line text-gray-400 password-toggle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6 flex items-center">
+                        <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                            <input type="checkbox" id="remember-me" class="opacity-0 absolute">
+                            <label for="remember-me"
+                                class="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+                            <span
+                                class="toggle-dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-300 ease-in-out"></span>
+                        </div>
+                        <label for="remember-me" class="text-sm text-gray-700 cursor-pointer">Remember me</label>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-2 px-4 rounded-button font-medium hover:bg-blue-600 transition duration-300 mb-4">Login</button>
+                    <div class="relative flex items-center justify-center mb-4">
+                        <div class="absolute inset-0 flex items-center">
+                            <div class="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div class="relative px-4 bg-white text-sm text-gray-500">Or continue with</div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <button type="button"
+                            class="flex items-center justify-center py-2 px-4 border border-gray-300 rounded-button text-gray-700 font-medium hover:bg-gray-50 transition duration-300">
+                            <i class="ri-google-fill mr-2 text-red-500"></i>
+                            <span class="whitespace-nowrap">Google</span>
+                        </button>
+                        <button type="button"
+                            class="flex items-center justify-center py-2 px-4 border border-gray-300 rounded-button text-gray-700 font-medium hover:bg-gray-50 transition duration-300">
+                            <i class="ri-facebook-fill mr-2 text-blue-600"></i>
+                            <span class="whitespace-nowrap">Facebook</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- Sign Up Form -->
+            <div id="signup-form" class="hidden">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First
+                                Name</label>
+                            <input type="text" id="first-name"
+                                class="form-input w-full px-3 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="John">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last
+                                Name</label>
+                            <input type="text" id="last-name"
+                                class="form-input w-full px-3 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="company-name" class="block text-sm font-medium text-gray-700 mb-1">Company Name
+                            (Optional)</label>
+                        <input type="text" id="company-name"
+                            class="form-input w-full px-3 py-2 border border-gray-300 rounded text-gray-700"
+                            placeholder="Your Company Ltd.">
+                    </div>
+                    <div class="mb-4">
+                        <label for="signup-email" class="block text-sm font-medium text-gray-700 mb-1">Email
+                            Address</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="ri-mail-line text-gray-400"></i>
+                            </div>
+                            <input type="email" id="signup-email"
+                                class="form-input w-full pl-10 pr-3 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="you@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="signup-password"
+                            class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="ri-lock-line text-gray-400"></i>
+                            </div>
+                            <input type="password" id="signup-password"
+                                class="form-input w-full pl-10 pr-10 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="••••••••">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer">
+                                <i class="ri-eye-off-line text-gray-400 password-toggle"></i>
+                            </div>
+                        </div>
+                        <div class="mt-1 flex">
+                            <div class="password-strength bg-red-500 rounded-full" style="width: 25%"></div>
+                            <div class="password-strength bg-gray-200 rounded-full ml-1" style="width: 25%"></div>
+                            <div class="password-strength bg-gray-200 rounded-full ml-1" style="width: 25%"></div>
+                            <div class="password-strength bg-gray-200 rounded-full ml-1" style="width: 25%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">Password must be at least 8 characters with uppercase,
+                            lowercase, number and special character</p>
+                    </div>
+                    <div class="mb-6">
+                        <label for="confirm-password" class="block text-sm font-medium text-gray-700 mb-1">Confirm
+                            Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="ri-lock-line text-gray-400"></i>
+                            </div>
+                            <input type="password" id="confirm-password"
+                                class="form-input w-full pl-10 pr-3 py-2 border border-gray-300 rounded text-gray-700"
+                                placeholder="••••••••">
+                        </div>
+                    </div>
+                    <div class="mb-6 flex items-start">
+                        <div class="flex items-center h-5">
+                            <input id="terms" type="checkbox" class="h-4 w-4 text-primary border-gray-300 rounded">
+                        </div>
+                        <div class="ml-3 text-sm">
+                            <label for="terms" class="text-gray-700">I agree to the <a href="#"
+                                    class="text-primary hover:underline">Terms of Service</a> and <a href="#"
+                                    class="text-primary hover:underline">Privacy Policy</a></label>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-primary text-white py-2 px-4 rounded-button font-medium hover:bg-blue-600 transition duration-300 mb-4">Create
+                        Account</button>
+                    <div class="text-center text-sm text-gray-600">
+                        <div class="flex items-center justify-center space-x-2">
+                            <i class="ri-shield-check-line text-green-500"></i>
+                            <span>Your data is secure and encrypted</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+      
+            <div class="footer-col">
+              <h3>Download Our App</h3>
+              <p>Download our app for Android and iOS mobile phones to shop on the go.</p>
+              <!-- Optional: Add Play Store / App Store icons here -->
+            </div>
+      
+            <div class="footer-col">
+              <img src="white.png" alt="ElectroComponents Logo" class="footer-logo">
+              <p>Buy electronic hardware components online – microcontrollers, development boards, transistors, PCBs, and more. Fast shipping & genuine parts guaranteed.</p>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h3>Follow Us</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+    <script>
+        // Tab switching
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        loginTab.addEventListener('click', function () {
+            loginTab.classList.add('border-primary', 'text-primary');
+            signupTab.classList.remove('border-primary', 'text-primary');
+            signupTab.classList.add('border-transparent', 'text-gray-500');
+            loginForm.classList.remove('hidden');
+            loginForm.classList.add('block');
+            signupForm.classList.remove('block');
+            signupForm.classList.add('hidden');
+        });
+        signupTab.addEventListener('click', function () {
+            signupTab.classList.add('border-primary', 'text-primary');
+            loginTab.classList.remove('border-primary', 'text-primary');
+            loginTab.classList.add('border-transparent', 'text-gray-500');
+            signupForm.classList.remove('hidden');
+            signupForm.classList.add('block');
+            loginForm.classList.remove('block');
+            loginForm.classList.add('hidden');
+        });
+        // Password toggle
+        const passwordToggles = document.querySelectorAll('.password-toggle');
+        passwordToggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const passwordField = this.parentElement.previousElementSibling;
+                if (passwordField.type === 'password') {
+                    passwordField.type = 'text';
+                    this.classList.remove('ri-eye-off-line');
+                    this.classList.add('ri-eye-line');
+                } else {
+                    passwordField.type = 'password';
+                    this.classList.remove('ri-eye-line');
+                    this.classList.add('ri-eye-off-line');
+                }
+            });
+        });
+        // Remember me toggle
+        const rememberMeCheckbox = document.getElementById('remember-me');
+        const toggleDot = document.querySelector('.toggle-dot');
+        rememberMeCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                toggleDot.classList.add('transform', 'translate-x-4');
+                toggleDot.parentElement.classList.remove('bg-gray-300');
+                toggleDot.parentElement.classList.add('bg-primary');
+            } else {
+                toggleDot.classList.remove('transform', 'translate-x-4');
+                toggleDot.parentElement.classList.remove('bg-primary');
+                toggleDot.parentElement.classList.add('bg-gray-300');
+            }
+        });
+        // Password strength
+        const passwordInput = document.getElementById('signup-password');
+        const strengthBars = document.querySelectorAll('.password-strength');
+        passwordInput.addEventListener('input', function () {
+            const password = this.value;
+            let strength = 0;
+            if (password.length >= 8) strength++;
+            if (/[A-Z]/.test(password)) strength++;
+            if (/[0-9]/.test(password)) strength++;
+            if (/[^A-Za-z0-9]/.test(password)) strength++;
+            strengthBars.forEach((bar, index) => {
+                if (index < strength) {
+                    bar.classList.remove('bg-gray-200');
+                    if (strength === 1) bar.classList.add('bg-red-500');
+                    if (strength === 2) bar.classList.add('bg-orange-500');
+                    if (strength === 3) bar.classList.add('bg-yellow-500');
+                    if (strength === 4) bar.classList.add('bg-green-500');
+                } else {
+                    bar.className = 'password-strength bg-gray-200 rounded-full ml-1';
+                    if (index === 0) bar.classList.remove('ml-1');
+                }
+            });
+        });
+        // Form validation
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // Simple validation example
+                let valid = true;
+                const inputs = this.querySelectorAll('input[type="text"], input[type="email"], input[type="password"]');
+                inputs.forEach(input => {
+                    if (input.value.trim() === '' && !input.id.includes('company-name')) {
+                        valid = false;
+                        input.classList.add('border-red-500');
+                        // Add error message if it doesn't exist
+                        if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('error-message')) {
+                            const errorMessage = document.createElement('p');
+                            errorMessage.classList.add('error-message', 'text-red-500', 'text-xs', 'mt-1');
+                            errorMessage.textContent = 'This field is required';
+                            input.parentNode.insertBefore(errorMessage, input.nextSibling);
+                        }
+                    } else {
+                        input.classList.remove('border-red-500');
+                        // Remove error message if it exists
+                        if (input.nextElementSibling && input.nextElementSibling.classList.contains('error-message')) {
+                            input.nextElementSibling.remove();
+                        }
+                    }
+                });
+                if (valid) {
+                    // Show success message
+                    const successMessage = document.createElement('div');
+                    successMessage.classList.add('bg-green-100', 'text-green-700', 'p-3', 'rounded', 'mb-4');
+                    successMessage.textContent = this.id === 'login-form' ? 'Login successful!' : 'Account created successfully!';
+                    this.prepend(successMessage);
+                    // Remove success message after 3 seconds
+                    setTimeout(() => {
+                        successMessage.remove();
+                    }, 3000);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
